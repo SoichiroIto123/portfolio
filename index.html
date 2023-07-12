@@ -3,123 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1>
-                <img src="./material/logo.svg" alt="logo" width="100px" height="100px">
-            </h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>TOP</li>
-                    <li>WORK</li>
-                    <li>SKILL</li>
-                    <li>PHOTO</li>
-                </ul>
-            </nav>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <nav>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#top">TOP</a></li>
+                        <li class="menu-item"><a href="#work">WORK</a></li>
+                        <li class="menu-item"><a href="#skill">SKILL</a></li>
+                        <li class="menu-item"><a href="#photo">PHOTO</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section id="top">
-            <video id="video" autoplay muted preload="auto" width="100%">
+    <main>
+        <section id="top">
+            <video id="video" autoplay loop muted preload="auto" width="100%">
                 <source src="./material/portfolio.mp4" type="video/mp4">
                 <p>お使いのブラウザは、動画の再生に対応しておりません。</p>
             </video>
+            <div class="scroll">
+                <a href="" class="scroll-text">scroll</a>
+            </div>
+            <div class="profile">
+                <div class="profile-container">
+                    <div class="profile-content">
+                        <h2>伊藤 蒼一郎</h2>
+                        <h2>Soichiro Ito</h2>
+                        <h4>Student of information science and technology</h4>
+                        <h4>2003/12/03 NAGANO</h4>
+                    </div>
+                    <div class="work-content">
+                        <h2>WORK</h2>
+                        <h4>2022 RECARO RACING TEAM 映像制作</h4>
+                        <h4>2022 中部リハビリテーション専門学校 映像制作</h4>
+                    </div>
+                    <div class="skill-sontent">
+                        <h2>SKILL</h2>
+                        <h4>programing: html, css, JavaScript, c, c++, Python</h4>
+                        <h4>After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender</h4>
+                    </div>
+                </div>
+                <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG">
+            </div>
+        </section>
+        <section id="work">
+            <h2>制作事例</h2>
+            <img src="./material/work.png" alt="work">
             <div>
+                <h2>RECARO RACING TEAM</h2>
                 <div>
-                    <h2>伊藤 蒼一郎</h2>
-                    <h2>Soichiro Ito</h2>
-                    <h4>Student of information science and technology</h4>
-                    <h4>2003/12/03 NAGANO</h4>
-                </div>
-                <div>
-                    <h2>WORK</h2>
-                    <h4>2022 RECARO RACING TEAM 映像制作</h4>
-                    <h4>2022 中部リハビリテーション専門学校 映像制作</h4>
-                </div>
-                <div>
-                    <h2>SKILL</h2>
-                    <h4>programing: html, css, JavaScript, c, c++, Python</h4>
-                    <h4>After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
-            <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG" alt="portrait">
-    </section>
-    <section id="work">
-        <h2>制作事例</h2>
-        <img src="./material/work.png" alt="work">
-        <div>
-            <h2>RECARO RACING TEAM</h2>
             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div>
-            <h2>中部リハビリテーション専門学校</h2>
-            <div>
-                <video controls poster="./material/tyuriha/tyuriha.png" preload="auto" width="560px" height="315px">
-                    <source src="./material/tyuriha/composition.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
-    <section id="skill">
-        <img src="./material/skill.png" alt="skill">
-        <div id="bar-graph">
-            <div class="bar-graph-wrap">
-                <div class="graph">
-                    <span class="html">html</span>
-                </div>
-                <div class="graph">
-                    <span class="css">css</span>
-                </div>
-                <div class="graph">
-                    <span class="js">JavaScript</span>
-                </div>
-                <div class="graph">
-                    <span class="c">c</span>
-                </div>
-                <div class="graph">
-                    <span class="cpp">c++</span>
-                </div>
-                <div class="graph">
-                    <span class="py">Python</span>
-                </div>
-                <div class="graph">
-                    <span class="aep">After Effects</span>
-                </div>
-                <div class="graph">
-                    <span class="pr">Premiere Pro</span>
-                </div>
-                <div class="graph">
-                    <span class="ai">Illastlator</span>
-                </div>
-                <div class="graph">
-                    <span class="psd">Photoshop</span>
-                </div>
-                <div class="graph">
-                    <span class="lrc">Lightroom Classic</span>
-                </div>
-                <div class="graph">
-                    <span class="mb">MAYA</span>
-                </div>
-                <div class="graph">
-                    <span class="blend">Blender</span>
+                <h2>中部リハビリテーション専門学校</h2>
+                <div>
+                    <video controls poster="./material/tyuriha/tyuriha.png" preload="auto" width="560px" height="315px">
+                        <source src="./material/tyuriha/composition.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-          </div>
-    </section>
-    <section id="photo">
-        <nav class="slider-controller">
-            <ul>
-              <li><a id="sc-to-left">←</a></li>
-              <li><a id="sc-to-right">→</a></li>
-            </ul>
-          </nav>
-    </section>
+        </section>
+        <section id="skill">
+            <img src="./material/skill.png" alt="skill">
+            <div id="bar-graph">
+                <div class="bar-graph-wrap">
+                    <div class="graph">
+                        <span class="html">html</span>
+                    </div>
+                    <div class="graph">
+                        <span class="css">css</span>
+                    </div>
+                    <div class="graph">
+                        <span class="js">JavaScript</span>
+                    </div>
+                    <div class="graph">
+                        <span class="c">c</span>
+                    </div>
+                    <div class="graph">
+                        <span class="cpp">c++</span>
+                    </div>
+                    <div class="graph">
+                        <span class="py">Python</span>
+                    </div>
+                    <div class="graph">
+                        <span class="aep">After Effects</span>
+                    </div>
+                    <div class="graph">
+                        <span class="pr">Premiere Pro</span>
+                    </div>
+                    <div class="graph">
+                        <span class="ai">Illastlator</span>
+                    </div>
+                    <div class="graph">
+                        <span class="psd">Photoshop</span>
+                    </div>
+                    <div class="graph">
+                        <span class="lrc">Lightroom Classic</span>
+                    </div>
+                    <div class="graph">
+                        <span class="mb">MAYA</span>
+                    </div>
+                    <div class="graph">
+                        <span class="blend">Blender</span>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section id="photo">
+            <nav class="slider-controller">
+                <ul>
+                  <li><a id="sc-to-left">←</a></li>
+                  <li><a id="sc-to-right">→</a></li>
+                </ul>
+              </nav>
+        </section>
+    </main>
     <footer>
         <div>
             <nav>
