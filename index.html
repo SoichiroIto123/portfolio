@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
@@ -26,7 +27,7 @@
     </header>
     <main>
         <section id="top">
-            <div class="video">
+            <div class="top-video">
                 <video id="video" autoplay loop muted preload="auto">
                     <source src="./material/portfolio.mp4" type="video/mp4">
                     <p>お使いのブラウザは、動画の再生に対応しておりません。</p>
@@ -37,6 +38,7 @@
             </div>
             <div class="profile">
                 <div class="profile-container">
+                    <h2 class="profile headline">PROFILE</h2>
                     <div class="profile-content">
                         <h2 class="name-ja">伊藤 蒼一郎</h2>
                         <h2 class="name-en">Soichiro Ito</h2>
@@ -53,8 +55,8 @@
                         <h4>programing: html, css, JavaScript, c, c++, Python</h4>
                         <h4>After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender</h4>
                     </div>
+                    <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG">
                 </div>
-                <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG">
             </div>
         </section>
         <section id="work">
@@ -62,14 +64,14 @@
             <img src="./material/work.png" alt="work">
             <div>
                 <h2>RECARO RACING TEAM</h2>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="work1">
+                    <iframe src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
             <div>
                 <h2>中部リハビリテーション専門学校</h2>
-                <div>
-                    <video controls poster="./material/tyuriha/tyuriha.png" preload="auto" width="560px" height="315px">
+                <div class="work2">
+                    <video controls poster="./material/tyuriha/tyuriha.png" preload="auto">
                         <source src="./material/tyuriha/composition.mp4" type="video/mp4">
                     </video>
                 </div>
