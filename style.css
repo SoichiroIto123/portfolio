@@ -504,14 +504,14 @@ a.work-button:hover::after{
 }
 
 .work01-iframe,
-.work02-video{
+.work02-iframe{
     width: 100%;
     aspect-ratio: 16 / 9;
     margin: 30px 0;
 }
 
 .work01-iframe iframe,
-.work02-video video{
+.work02-iframe iframe{
     display: block;
     margin: 0 auto;
     width: 100%;
