@@ -5,21 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="hamburger-menu">
+        <div class="hamburger-text">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <div class="menu-content">
+            <div class="menu-content1">
+                <div class="menu-text">
+                    <h1>SOICHIRO ITO</h1>
+                </div>
                 <nav>
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="#top">TOP</a></li>
-                        <li class="menu-item"><a href="#work">WORK</a></li>
-                        <li class="menu-item"><a href="#skill">SKILL</a></li>
-                        <li class="menu-item"><a href="#photo">PHOTO</a></li>
+                    <ul class="menu-list1">
+                        <li class="menu-item1"><a href="#top">TOP</a></li>
+                        <li class="menu-item1"><a href="#work">WORK</a></li>
+                        <li class="menu-item1"><a href="#skill">SKILL</a></li>
+                        <li class="menu-item1"><a href="#photo">PHOTO</a></li>
+                    </ul>
+                </nav>
+                <div class="icon-container">
+                    <nav>
+                        <ul class="icon-list1">
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><span class="instagram-icon"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><span class="twitter-icon"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><span class="facebook-icon"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright">
+                        <small>©️ SoichiroIto All rights reserved.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="menu-content2">
+                <nav>
+                    <ul class="menu-list2">
+                        <li><a href="#top">TOP</a></li>
+                        <li><a href="#work">WORK</a></li>
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#photo">PHOTO</a></li>
+                    </ul>
+                    <ul class="icon-list2">
+                        <li><a href="https://www.instagram.com/"><span class="instagram-icon"></span></a></li>
+                        <li><a href="https://twitter.com/"><span class="twitter-icon"></span></a></li>
+                        <li><a href="https://www.facebook.com/"><span class="facebook-icon"></span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,111 +79,151 @@
             </div>
             <div class="profile">
                 <div class="profile-container">
-                    <h2 class="profile headline">PROFILE</h2>
+                    <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG" class="profile-img target">
+                    <div class="headline-parent">
+                        <h2 class="headline clip">PROFILE</h2>
+                    </div>
                     <div class="profile-content">
-                        <h2 class="name-ja">伊藤 蒼一郎</h2>
-                        <h2 class="name-en">Soichiro Ito</h2>
-                        <h4 class="director">Student of information science and technology</h4>
-                        <h4 class="birth">2003/12/03 NAGANO</h4>
+                        <h1 class="target">伊藤蒼一郎</h2>
+                        <h4 class="target">
+                            2003年生まれ 長野県出身 学生
+                            <br>
+                            昨年RECARO RACING TEAMのYouTube動画の作成に参加。また、学校法人珪山学園中部リハビリテーション専門学校の学校紹介動画を作成。
+                            <br>
+                            スキル
+                            <br>
+                            プログラミング: html, css, JavaScript, c, c++, Python
+                            <br>
+                            ソフトウェア: After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender
+                        </h4>
+                        <h4 class="target">
+                            <br>
+                            Soichiro Ito
+                            <br>
+                            Born in 2003 in Nagano, Japan Student
+                            <br>
+                            Participated in the creation of a YouTube video for RECARO RACING TEAM last year. Also created a school introduction video for Chubu Rehabilitation College of Keizan Gakuen.
+                            <br>
+                            Skills
+                            <br>
+                            Programming: html, css, JavaScript, c, c++, Python
+                            <br>
+                            Software: After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender
+                        </h4>
                     </div>
-                    <div class="work-content">
-                        <h2>WORK</h2>
-                        <h4>2022 RECARO RACING TEAM 映像制作</h4>
-                        <h4>2022 中部リハビリテーション専門学校 映像制作</h4>
-                    </div>
-                    <div class="skill-content">
-                        <h2>SKILL</h2>
-                        <h4>programing: html, css, JavaScript, c, c++, Python</h4>
-                        <h4>After Effects, Premiere Pro, Illastlator, Photoshop, Lightroom Classic, MAYA, Blender</h4>
-                    </div>
-                    <img src="./material/0EDDFCC4-F2B4-410B-9560-7A7C9F887BD2.JPG">
                 </div>
             </div>
         </section>
-        <section id="work">
-            <h2>制作事例</h2>
-            <img src="./material/work.png" alt="work">
-            <div>
-                <h2>RECARO RACING TEAM</h2>
-                <div class="work1">
-                    <iframe src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+        <section id="work" class="work">
+            <div class="headline-parent">
+                <h2 class="headline clip">WORK</h2>
             </div>
-            <div>
-                <h2>中部リハビリテーション専門学校</h2>
-                <div class="work2">
-                    <video controls poster="./material/tyuriha/tyuriha.png" preload="auto">
-                        <source src="./material/tyuriha/composition.mp4" type="video/mp4">
-                    </video>
+            <div class="work-list">
+                <div class="work01-list">
+                    <h2 class="work-text target">RECARO RACING TEAM</h2>
+                    <div class="work01-iframe target">
+                        <iframe src="https://www.youtube.com/embed/Bvsh8hvUetM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://www.youtube.com/@recaroautomotivejapanoffic3784" target="_blank" class="work-button target">YouTubeチャンネルを見る</a>
+                </div>
+                <div class="work02-list">
+                    <h2 class="work-text target">中部リハビリテーション専門学校</h2>
+                    <div class="work02-video target">
+                        <video controls poster="./material/tyuriha/thumbnail.png" preload="auto">
+                            <source src="./material/tyuriha/中部リハビリテーション専門学校.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <a href="https://chureha.kzan.jp/" target="_blank" class="work-button target">サイトを見る</a>
                 </div>
             </div>
         </section>
-        <section id="skill">
-            <img src="./material/skill.png" alt="skill">
-            <div id="bar-graph">
+        <section id="skill" class="skill">
+            <div class="headline-parent">
+                <h2 class="headline clip">SKILL</h2>
+            </div>
+            <div id="bar-graph" class="bar">
                 <div class="bar-graph-wrap">
-                    <div class="graph">
-                        <span class="html">html</span>
+                    <div class="graph html">
+                        <span>html</span>
                     </div>
-                    <div class="graph">
-                        <span class="css">css</span>
+                    <div class="graph  css">
+                        <span>css</span>
                     </div>
-                    <div class="graph">
-                        <span class="js">JavaScript</span>
+                    <div class="graph js">
+                        <span>JavaScript</span>
                     </div>
-                    <div class="graph">
-                        <span class="c">c</span>
+                    <div class="graph c">
+                        <span>c</span>
                     </div>
-                    <div class="graph">
-                        <span class="cpp">c++</span>
+                    <div class="graph cpp">
+                        <span>c++</span>
                     </div>
-                    <div class="graph">
-                        <span class="py">Python</span>
+                    <div class="graph py">
+                        <span>Python</span>
                     </div>
-                    <div class="graph">
-                        <span class="aep">After Effects</span>
+                    <div class="graph aep">
+                        <span>After Effects</span>
                     </div>
-                    <div class="graph">
-                        <span class="pr">Premiere Pro</span>
+                    <div class="graph pr">
+                        <span>Premiere Pro</span>
                     </div>
-                    <div class="graph">
-                        <span class="ai">Illastlator</span>
+                    <div class="graph ai">
+                        <span>Illastlator</span>
                     </div>
-                    <div class="graph">
-                        <span class="psd">Photoshop</span>
+                    <div class="graph psd">
+                        <span>Photoshop</span>
                     </div>
-                    <div class="graph">
-                        <span class="lrc">Lightroom Classic</span>
+                    <div class="graph lrc">
+                        <span>Lightroom Classic</span>
                     </div>
-                    <div class="graph">
-                        <span class="mb">MAYA</span>
+                    <div class="graph mb">
+                        <span>MAYA</span>
                     </div>
-                    <div class="graph">
-                        <span class="blend">Blender</span>
+                    <div class="graph blend">
+                        <span>Blender</span>
                     </div>
                 </div>
               </div>
         </section>
-        <section id="photo">
-            <nav class="slider-controller">
-                <ul>
-                  <li><a id="sc-to-left">←</a></li>
-                  <li><a id="sc-to-right">→</a></li>
-                </ul>
-              </nav>
+        <section id="photo" class="photo">
+            <div class="headline-parent">
+                <h2 class="headline clip">PHOTO</h2>
+            </div>
+            <div class="slider">
+                <div class="slide_container">
+                  <input type="radio" name="radioBtn" id="radio_btn1" />
+                  <input type="radio" name="radioBtn" id="radio_btn2" />
+                  <input type="radio" name="radioBtn" id="radio_btn3" />
+                  <input type="radio" name="radioBtn" id="radio_btn4" />
+                  <div class="slide_item start">
+                    <img src="./material/photo/image1.JPG" alt="スライド画像1" />
+                  </div>
+                  <div class="slide_item">
+                    <img src="./material/photo/image2.JPG" alt="スライド画像2" />
+                  </div>
+                  <div class="slide_item">
+                    <img src="./material/photo/image3.jpg" alt="スライド画像3" />
+                  </div>
+                  <div class="slide_item">
+                    <img src="./material/photo/image4.JPG" alt="スライド画像4" />
+                  </div>
+                  <div class="slide_auto">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                    <div class="auto_btn3"></div>
+                    <div class="auto_btn4"></div>
+                  </div>
+                </div>
+                <div class="slide_manual">
+                  <label for="radio_btn1" class="manual_btn"></label>
+                  <label for="radio_btn2" class="manual_btn"></label>
+                  <label for="radio_btn3" class="manual_btn"></label>
+                  <label for="radio_btn4" class="manual_btn"></label>
+                </div>
+              </div>
         </section>
     </main>
     <footer>
-        <div>
-            <nav>
-                <ul>
-                    <li>TOP</li>
-                    <li>WORK</li>
-                    <li>SKILL</li>
-                    <li>PHOTO</li>
-                </ul>
-            </nav>
-        </div>
         <p class="copyright">
             <small>©️ SoichiroIto All rights reserved.</small>
         </p>
